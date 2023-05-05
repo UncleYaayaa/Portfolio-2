@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 2</title>
+    <link rel="stylesheet" href="Style.css" />
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css" />
+  </head>
+  <body>
+    <div class="header"></div>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu" />
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+      <div class="spinner diagonal part-1"></div>
+      <div class="spinner horizontal"></div>
+      <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+      <ul class="sidebarMenuInner">
+        <li>Yaseen Karriem <span>Just a dude </span></li>
+        <li>
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://za.linkedin.com/" target="_blank">Linkedin</a>
+        </li>
+        <li>
+          <a href="" target="_blank">Download CV</a>
+        </li>
+      </ul>
+    </div>
+    <nav class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </nav>
+    <section id="home">
+      <div class="main">
+        <h1 class="headings">HEY IM<br />YASEEN KARRIEM</h1>
+        <h2>Front-end Developer</h2>
+      </div>
+    </section>
+    <section id="about"> 
+<h1 class="headings">ABOUT <span>ME</span></h1>
+      <div id="pic">
+        <img src="Images/Naruto.webp" alt="" />
+        <div id="intro">
+          <h2>YASEEN <span>KARRIEM</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum esse
+            voluptate repellat veritatis tempora exercitationem illo cupiditate
+            ipsam dicta tempore ab mollitia expedita, ex earum quo autem sed
+            soluta blanditiis corrupti ut debitis saepe nulla! Aliquam maxime
+            optio natus vitae incidunt laudantium hic reiciendis ullam, tempora
+            excepturi laboriosam quia a! Enim officiis vero, accusantium odit
+            magnam ut fuga dolore voluptate esse reprehenderit voluptatibus iste
+            distinctio blanditiis saepe. Temporibus harum amet iusto distinctio
+            nobis hic, autem placeat quam voluptatem enim minima assumenda, sunt
+            fugiat exercitationem necessitatibus repellat quibusdam impedit esse
+            veniam alias quas itaque dignissimos illum nostrum. Laborum odio vel
+            qui!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="headings">Projects</h1>
+      <div class="monday">
+        <img src="Images/pokeball.png" alt="">
+        <img class="top-img" src="Images/Bulbasaur.png" />
+        </div>
+        <div class="tuesday">
+        <img src="Images/pokeball.png" alt="">
+        <img class="top-img2" src="Images/squirtle.png" />
+      </div>
+      <div class="wednesday">
+        <img src="images/pokeball.png" />
+        <img class="top-img3" src="Images/charmander.png" />
+      </div>
+    </section>
+    <section id="contact">
+      <form action="https://formspree.io/f/xyyadjvg" method="POST">
+       <h1 class="headings">CONTACT <span>ME</span></h1>
+       <input type="text" name="sname" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+       <input type="email" name="semail" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+       <input type="tel" name="sphone" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+       <textarea class="form-control" name="smessage" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+       <button type="submit" class="btn btn-xl" onclick="this.form.submit();">Send Message</button>
+    </form>
+    </section>
+</html>
